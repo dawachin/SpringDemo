@@ -1,0 +1,17 @@
+= Essentials API
+
+== Overview
+Essentials APIは、スケジュール管理を中心として、旅費計算、出張申請を統合的に管理し、お客様のスピーディーな経営状況把握にお役立ちします。
+
+=== Version information
+Version: 1.0.0
+
+=== URI scheme
+Host: localhost
+BasePath: /
+
+=== Tags
+
+* schedule-controller: Schedule Controller
+
+

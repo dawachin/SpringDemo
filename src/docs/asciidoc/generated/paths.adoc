@@ -1,0 +1,70 @@
+== Paths
+=== スケジュール取得
+----
+GET /api/schedule
+----
+
+==== Description
+:hardbreaks:
+スケジュール一覧を取得します。
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|<<スケジュール情報>> array
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|404|Not Found|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* schedule-controller
+
+=== スケジュール取得
+----
+GET /api/schedule/{date}
+----
+
+==== Description
+:hardbreaks:
+`基準日から１週間分のスケジュール一覧を取得します。
+
+==== Parameters
+[options="header"]
+|===
+|Type|Name|Description|Required|Schema|Default
+|PathParameter|date|date|true|string|
+|===
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|<<スケジュール情報>> array
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|404|Not Found|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* schedule-controller
+

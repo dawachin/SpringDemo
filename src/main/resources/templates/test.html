@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="jp" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>MainPage</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+    <h1>Regist Page</h1>
+    <h1 th:text="${message}"></h1>
+    <tr th:each="schedule : ${tSchedule}">
+        <td th:text="${schedule.name}"></td>
+    </tr>
+</div>
+</body>
+</html>

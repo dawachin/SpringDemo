@@ -1,0 +1,47 @@
+== Definitions
+=== Time
+[options="header"]
+|===
+|Name|Description|Required|Schema|Default
+|date||false|integer (int32)|
+|day||false|integer (int32)|
+|hours||false|integer (int32)|
+|minutes||false|integer (int32)|
+|month||false|integer (int32)|
+|seconds||false|integer (int32)|
+|time||false|integer (int64)|
+|timezoneOffset||false|integer (int32)|
+|year||false|integer (int32)|
+|===
+
+=== Timestamp
+[options="header"]
+|===
+|Name|Description|Required|Schema|Default
+|date||false|integer (int32)|
+|day||false|integer (int32)|
+|hours||false|integer (int32)|
+|minutes||false|integer (int32)|
+|month||false|integer (int32)|
+|nanos||false|integer (int32)|
+|seconds||false|integer (int32)|
+|time||false|integer (int64)|
+|timezoneOffset||false|integer (int32)|
+|year||false|integer (int32)|
+|===
+
+=== スケジュール情報
+[options="header"]
+|===
+|Name|Description|Required|Schema|Default
+|deleteFlag||false|integer (int32)|
+|endDate||false|string (date)|
+|endTime||false|<<Time>>|
+|id||false|integer (int32)|
+|location||false|string|
+|name||false|string|
+|startDate||false|string (date)|
+|startTime||false|<<Time>>|
+|updateTime||false|<<Timestamp>>|
+|===
+
