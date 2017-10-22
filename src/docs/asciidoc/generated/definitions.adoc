@@ -34,14 +34,14 @@
 [options="header"]
 |===
 |Name|Description|Required|Schema|Default
-|deleteFlag||false|integer (int32)|
-|endDate||false|string (date)|
-|endTime||false|<<Time>>|
-|id||false|integer (int32)|
-|location||false|string|
-|name||false|string|
-|startDate||false|string (date)|
-|startTime||false|<<Time>>|
-|updateTime||false|<<Timestamp>>|
+|id|スケジュールID|false|integer (int32)|
+|name|予定名|false|string|
+|startDate|開始日|false|string (date)|
+|startTime|開始時間|false|<<Time>>|
+|endDate|終了日|false|string (date)|
+|endTime|終了時間|false|<<Time>>|
+|location|開催場所|false|string|
+|updateTime|更新日時|false|<<Timestamp>>|
+|deleteFlag|削除フラグ|false|integer (int32)|
 |===
 

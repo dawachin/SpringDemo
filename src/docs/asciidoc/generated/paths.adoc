@@ -1,59 +1,30 @@
 == Paths
-=== スケジュール取得
+=== スケジュール取得(月)
 ----
-GET /api/schedule
-----
-
-==== Description
-:hardbreaks:
-スケジュール一覧を取得します。
-
-==== Responses
-[options="header"]
-|===
-|HTTP Code|Description|Schema
-|200|OK|<<スケジュール情報>> array
-|401|Unauthorized|No Content
-|403|Forbidden|No Content
-|404|Not Found|No Content
-|===
-
-==== Consumes
-
-* application/json
-
-==== Produces
-
-* */*
-
-==== Tags
-
-* schedule-controller
-
-=== スケジュール取得
-----
-GET /api/schedule/{date}
+GET /api/schedule/month/{date}
 ----
 
 ==== Description
 :hardbreaks:
-`基準日から１週間分のスケジュール一覧を取得します。
+基準日から一ヶ月分のスケジュールを取得します。
 
 ==== Parameters
 [options="header"]
 |===
 |Type|Name|Description|Required|Schema|Default
-|PathParameter|date|date|true|string|
+|PathParameter|date|基準日|true|string|
+|QueryParameter|format|返却形式|false|string|json
+|QueryParameter|userId|ユーザーＩＤ|true|string|
 |===
 
 ==== Responses
 [options="header"]
 |===
 |HTTP Code|Description|Schema
-|200|OK|<<スケジュール情報>> array
-|401|Unauthorized|No Content
-|403|Forbidden|No Content
-|404|Not Found|No Content
+|200|OK|<<スケジュール情報>>
+|401|ユーザーＩＤが登録されていません。|No Content
+|403|データが登録されていません。|No Content
+|404|URLが間違っています。|No Content
 |===
 
 ==== Consumes
@@ -66,5 +37,5 @@ GET /api/schedule/{date}
 
 ==== Tags
 
-* schedule-controller
+* schedule
 

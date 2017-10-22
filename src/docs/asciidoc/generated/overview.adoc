@@ -12,6 +12,6 @@ BasePath: /
 
 === Tags
 
-* schedule-controller: Schedule Controller
+* schedule: Schedule Controller
 
 

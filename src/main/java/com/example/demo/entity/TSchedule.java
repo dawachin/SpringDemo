@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 import javax.persistence.*;
 import java.sql.Date;
@@ -45,6 +46,7 @@ public class TSchedule {
     @Column
     private String name;
 
+    @ApiModelProperty(value = "スケジュールID", position = 0)
     public Integer getId() {
         return id;
     }
@@ -53,6 +55,7 @@ public class TSchedule {
         this.id = id;
     }
 
+    @ApiModelProperty(value = "更新日時", position = 7)
     public Timestamp getUpdateTime() {
         return updateTime;
     }
@@ -61,6 +64,7 @@ public class TSchedule {
         this.updateTime = updateTime;
     }
 
+    @ApiModelProperty(value = "削除フラグ", position = 8)
     public Integer getDeleteFlag() {
         return deleteFlag;
     }
@@ -69,6 +73,7 @@ public class TSchedule {
         this.deleteFlag = deleteFlag;
     }
 
+    @ApiModelProperty(value = "開催場所", position = 6)
     public String getLocation() {
         return location;
     }
@@ -77,6 +82,7 @@ public class TSchedule {
         this.location = location;
     }
 
+    @ApiModelProperty(value = "終了時間", position = 5)
     public Time getEndTime() {
         return endTime;
     }
@@ -85,6 +91,7 @@ public class TSchedule {
         this.endTime = endTime;
     }
 
+    @ApiModelProperty(value = "開始時間", position = 3)
     public Time getStartTime() {
         return startTime;
     }
@@ -93,6 +100,7 @@ public class TSchedule {
         this.startTime = startTime;
     }
 
+    @ApiModelProperty(value = "終了日", position = 4)
     public Date getEndDate() {
         return endDate;
     }
@@ -101,6 +109,7 @@ public class TSchedule {
         this.endDate = endDate;
     }
 
+    @ApiModelProperty(value = "開始日", position = 2)
     public Date getStartDate() {
         return startDate;
     }
@@ -109,6 +118,7 @@ public class TSchedule {
         this.startDate = startDate;
     }
 
+    @ApiModelProperty(value = "予定名", position = 1)
     public String getName() {
         return name;
     }
